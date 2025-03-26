@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, {{ username }}!</h2>
+    <p>Choose a topic to learn more:</p>
+    <ul>
+        <li><a href="{{ url_for('flask_info') }}">
+            <button>Flask Information</button></a></li>
+        <li><a href="{{ url_for('python_info') }}">
+            <button>Python Information</button></a></li>
+    </ul>
+    <a href="{{ url_for('logout') }}">
+        <button>Logout</button></a>
+</body>
+</html>
